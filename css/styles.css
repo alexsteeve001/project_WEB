@@ -1,0 +1,36 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+li {
+    border-right: 0px;
+  }
+  
+#nav{
+    background:#2a506d;
+    justify-content: center;
+}
+  
+#col-green{
+    background: #497f4b;
+	background: -webkit-linear-gradient(to right, #3b3e3e, #497f4b); 
+    background: linear-gradient(to right, #3b3e3e, #497f4b); 
+}
+#text-big{
+    color: white;
+    font-size: 120px;
+}
+#text-white{
+    color: white;
+}
