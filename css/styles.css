@@ -13,24 +13,184 @@
     }
 }
 
+a {
+    margin: 0;
+    font-family: Gabriola;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 li {
     border-right: 0px;
   }
+
+#back_black{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#spacer{
+    padding-top: 50px;
+}
   
 #nav{
-    background:#2a506d;
+    background:#ffffff;
+    justify-content: center;
+}
+
+#secondary_nav{
+    background:#000000;
     justify-content: center;
 }
   
 #col-green{
-    background: #497f4b;
-	background: -webkit-linear-gradient(to right, #3b3e3e, #497f4b); 
-    background: linear-gradient(to right, #3b3e3e, #497f4b); 
+    background: #ffffff;
+
 }
 #text-big{
     color: white;
     font-size: 120px;
 }
-#text-white{
-    color: white;
+
+h1{
+    margin: 0;
+    font-family: Gabriola;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #080808;
+    text-decoration: underline;
 }
+
+p{
+    margin: 0;
+    font-family: Gabriola;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.0;
+}
+
+h4{
+    margin: 0;
+    font-family: Edwardian Script ITC;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.0;
+    color: #FF3366;
+}
+
+#description{
+    font-family: Matura MT script Capitals; 
+    font-size: 30px;
+    padding: 3%;
+    background-color: #C8C8C8; 
+    color: #000000;
+}
+
+#spans{
+    display: inline-block;
+    color: #FF3366;
+    font-family: Edwardian Script ITC;
+    font-size: 30px;
+} 
+
+#div-row-color{
+    background-color: #DDD3D3;
+    color: black;
+}
+
+#title-padding{
+        padding-top: 50px;
+        padding-bottom: 50px;
+}
+
+.footer {
+    margin: 25px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+
+ #btn01{
+     background-color: #080808;
+     color: #ffffff;
+     font-family: Gabriola;
+     font-size: 25px;
+     border-radius: 10px;
+     width:150px;
+     height:45px;
+     border: 0px;
+ }
+
+ #contact{
+     font-family: Petit Formal Script;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+    color: #3c3834;
+    letter-spacing: 0;
+    padding-top: 10px;
+ }
+ #info-contact{
+    font-family: Josefin Sans;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.05em;
+ }
+ #parrafo{
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+ }
+
+.image-center{
+    text-align: center;
+    align-content: center;
+}
+#tabla {
+	border: 1px solid white;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+        
+    
+
+    }
+
+      .loc {
+        display:table;
+        position:relative;
+        margin-bottom:39px;
+    }
+    .faldon {
+        display:table-caption;
+        position:absolute;
+        bottom:0;
+        left:0;
+        display:block;
+        width:100%;
+        padding:9px 0;
+        background:#c8c8c8;
+        color:black;
+        font-family: Matura MT script Capitals; 
+        font-size:22px;
+    }
+    div.centro{
+        margin:0 auto;
+      }
