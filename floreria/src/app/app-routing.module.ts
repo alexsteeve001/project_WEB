@@ -10,6 +10,7 @@ import { OfertasComponent } from './ofertas/ofertas.component';
 import { WhiteComponent } from './catalogo/white/white.component';
 import { PinkComponent } from './catalogo/pink/pink.component';
 import { LightPinkComponent } from './catalogo/light-pink/light-pink.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
      path: 'light-pink',
      component: LightPinkComponent
+  },
+  {
+     path: 'login',
+     component: LoginComponent
   },
   { 
     path: '**', 

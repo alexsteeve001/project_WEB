@@ -20,6 +20,7 @@ import {AngularFireModule} from '@angular/fire'
 import {AngularFireDatabaseModule} from '@angular/fire/database'
 import {AngularFirestore} from '@angular/fire/firestore'
 import { environment } from 'src/environments/environment';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { environment } from 'src/environments/environment';
     OfertasComponent,
     WhiteComponent,
     LightPinkComponent,
-    PinkComponent
+    PinkComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

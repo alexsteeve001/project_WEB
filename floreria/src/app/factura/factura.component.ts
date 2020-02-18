@@ -11,12 +11,12 @@ export class FacturaComponent implements OnInit {
 facturas:Factura[]=[]
 facturaNueva:Factura={
   id:'',
-  nombres:'',
-  apellidos:'',
-  cedula:'',
-  ciudad:'',
-  provincia:'',
-  direccion:'',
+  nombres:'Carol Lizeth',
+  apellidos:'Oña Hinostroza',
+  cedula:'1725056459',
+  ciudad:'Quito',
+  provincia:'Pichincha',
+  direccion:'Cocotog',
   subtotal:0,
   costo_envio:0,
   total:0,
