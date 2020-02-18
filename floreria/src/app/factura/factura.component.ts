@@ -38,6 +38,8 @@ transferencia:boolean=true;
     console.log(this.facturaNueva)
     this.facturaNueva.total=this.facturaNueva.subtotal+this.facturaNueva.costo_envio
     this.facturacionService.registrarFactura(this.facturaNueva);
+    window.print();
+    
     alert('Factura registrada con éxito')
     window.open('http://localhost:4200/#/inicio',"_self");
   }
