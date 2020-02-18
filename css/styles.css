@@ -194,3 +194,7 @@ h4{
     div.centro{
         margin:0 auto;
       }
+    table,td{
+        border: 1px solid black;
+        padding: 10px 5% 10px;
+    }
