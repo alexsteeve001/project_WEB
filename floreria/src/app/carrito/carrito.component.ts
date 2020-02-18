@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FacturacionService } from '../factura/facturacion.service';
 
 @Component({
   selector: 'app-carrito',
@@ -50,7 +51,7 @@ export class CarritoComponent implements OnInit {
   productosAgregados=[
   ]
   
-  constructor() { }
+  constructor(private facturacionService:FacturacionService) { }
 
   ngOnInit() {
   }
@@ -111,6 +112,9 @@ export class CarritoComponent implements OnInit {
   completarCompra(){
     if(this.total>0){
       alert('Compra realizada con éxito')
+      this.facturacionService.subtotal=this.total
+      this.facturacionService.costo_envio=this.total*0.05
+      window.open('http://localhost:4200/#/factura',"_self")
     }else{
       alert('No puede completar una compra vacía')
     }

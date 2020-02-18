@@ -16,7 +16,10 @@ import { WhiteComponent } from './catalogo/white/white.component';
 import { LightPinkComponent } from './catalogo/light-pink/light-pink.component';
 import { PinkComponent } from './catalogo/pink/pink.component';
 import {FormsModule} from '@angular/forms'
-
+import {AngularFireModule} from '@angular/fire'
+import {AngularFireDatabaseModule} from '@angular/fire/database'
+import {AngularFirestore} from '@angular/fire/firestore'
+import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,9 +39,12 @@ import {FormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule
+    
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,10 +9,10 @@
       <div class="col-md-12">
         <div class="card card-default">
           <div class="card-header">
-              <h2 style="text-align: center">
+              <h1 style="text-align: center">
                   <i class="pi pi-shopping-cart" ></i>
                   Productos disponibles
-              </h2>
+              </h1>
           </div>
           <div class="card-body" style="max-height: 500px;overflow-y: auto;overflow-x: auto;  ">
             <div class="row">
@@ -35,7 +35,7 @@
                       <td > 
                         <img src="../../assets/imagenes/{{producto.imagen}}" alt="" height="50%">
                       </td>
-                      <td style="vertical-align: middle;" >{{producto.precio}}</td>
+                      <td style="vertical-align: middle;" >${{producto.precio}}</td>
                       <td style="vertical-align: middle;">
                         <button class="btn btn-success" (click)="agregarProducto(producto.codigo,producto.nombre,producto.precio,prod)">+1</button>
                       </td>
@@ -52,10 +52,10 @@
         <div class="card card-default">
           
         <div class="card-header">
-            <h2 style="text-align: center">
+            <h1 style="text-align: center">
                 <i class="pi pi-dollar" ></i>
                 Carrito
-            </h2>
+            </h1>
         </div>
         <div class="card-body " style="max-height: 500px;overflow-y: auto;overflow-x: auto;  ">
             <div class="row">
@@ -79,8 +79,8 @@
                           <td >{{producto.codigo}}</td>
                           <td >{{producto.nombre}}</td>
                           <td >{{producto.cantidad}}</td>
-                          <td >{{producto.precio}}</td>
-                          <td >{{producto.precioTotal}}</td>
+                          <td >${{producto.precio}}</td>
+                          <td >${{producto.precioTotal}}</td>
                           <td >
                             <button class="btn btn-danger" (click)="restarProducto(producto.nombre,producto.precio)">-1</button>
                           </td>

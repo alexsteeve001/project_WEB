@@ -1,3 +1,112 @@
-<p>
-  factura works!
-</p>
+<main role="main" id="col-green" style="margin-left: 4%;margin-right: 4%;"><br><br>
+  <h1 style="text-align: left; font-size: 45px; color: #FF3366;">Detalles de facturacion</h1><br><br>
+  
+  <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Nombres*</label>
+          <input class="form-control" id="inputEmail4" name="inputNombres" [(ngModel)]="facturaNueva.nombres">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputApellidos">Apellidos*</label>
+          <input  class="form-control" id="inputApellidos" name="inputApellidos" [(ngModel)]="facturaNueva.apellidos">
+        </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCedula">Cedula de identidad*</label>
+            <input  class="form-control" id="inputCedula" name="inputCedula" [(ngModel)]="facturaNueva.cedula">
+          </div>
+          <div class="form-group col-md-6">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCiudad">Localidad/Ciudad*</label>
+            <input  class="form-control" id="inputCiudad" name="inputCiudad" [(ngModel)]="facturaNueva.ciudad">
+          </div>
+          <div class="form-group col-md-6">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputProvincia">Provincia*</label>
+            <input type="email" class="form-control" id="inputProvincia" name="inputProvincia"  [(ngModel)]="facturaNueva.provincia">
+          </div>
+          <div class="form-group col-md-6">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="inputAddress">Direccion Completa</label>
+          <input class="form-control" id="inputAddress" name="inputAddress" [(ngModel)]="facturaNueva.direccion">
+      </div>
+    </form>
+    <h1 style="text-align: left; font-size: 45px; color: #FF3366;">Tu Pedido</h1><br>
+
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th scope="row">Subtotal</th>
+          <td>${{facturaNueva.subtotal}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Costo Envio</th>
+          <td>${{facturaNueva.costo_envio}}</td>
+        </tr>
+        <tr>
+          <th scope="row">TOTAL</th>
+          <td>${{facturaNueva.subtotal+facturaNueva.costo_envio}}</td>
+        </tr>
+      </tbody>
+    </table><br>
+
+
+<div class="row">
+  <div class="col-md-2 text-right">
+    <div class="radio">
+      <label><input type="radio" id='btnTransferencia' name="optradio"  [(ngModel)]='facturaNueva.tipo_pago' value="Transferencia Directa"></label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="radio">
+      <label><input type="radio" id='btnContra' name="optradio" [(ngModel)]='facturaNueva.tipo_pago' value="Contra Entrega"></label>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <h5>Transferencia Bancaria Directa</h5>
+      </div>
+    </div>
+    <p style="font-family: Arial; font-size: 18px; padding-left: 2%; padding-right: 3%;">Puede hacer su pedido directamente en nuestra cuenta bancaria. 
+        Por favor use el código del pedido como referencia de pago. Banco Pichincha: 
+        Cuenta de ahorros #4423705200 a nombre de Alex Carrillo C.I. 1725987401. 
+        Banco de Guayaquil: Cuenta corriente #0006987423 a nombre de Karen Morocho C.C. 1724449887<br> 
+        Si usted realiza el pago mediante transferencia bancaria, de manera automática le obsequiamos 
+        una caja de 6 fresas cubiertas de chocolate en compras superiores a $50.00 USD. Una vez realizado 
+        el pago, enviar el comprobante al siguiente email: ventas@miraflor.com o comunicarse al teléfono: 
+        (+593-2) 3063408.</p><br>
+
+  <div class="input-group">
+      <div class="input-group-prepend">
+          <h5>Pago contra entrega</h5>
+      </div>
+  </div>
+  <p style="font-family: Arial; font-size: 18px; padding-left: 2%; padding-right: 3%;">Ordene su arrgelo 
+      floral aquí y lo puede pagar en 
+  el momento en que lo recibe. El importe completo deberá ser entregado ese momento.<br>
+  Como obsequio recibirá una caja de 4 fresas cubiertas de chocolate en compras superiores a $65.00 USD.</p>
+  </div>
+</div>
+
+    <br>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-outline-danger btn-lg" (click)='finalizarCompra()'>Finalizar Compra</button>
+    </div>
+
+
+
+</main>
